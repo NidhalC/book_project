@@ -5,9 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="livre.css">
 </head>
 <body>
-	<label>Title</label>
-	<br>
-<input type="text" id="myTitre" onkeypress="runScript(event)">
+	<div id="addBook" class="header">
+		<label>Title</label>
+		<br>
+		<input type="text" id="myTitre" onkeypress="runScript(event)">
 		<br><br>
 		<label>Author</label>
 		<br>
@@ -18,5 +19,15 @@
 		<input type="text" id="myISBN" onkeypress="runScript(event)">
 		<br><br>
 		<button onclick="newElement()" class="addBtn">Submit</button>
+	</div>
+
+	<div id="showTask" class="header">
+		<ul id="myUL">
+		</ul> 
+
+	</div>
+
+	<script src="livres.js"></script>
+
 </body>
 </html>
