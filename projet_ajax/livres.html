@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="livre.css">
+</head>
+<body>
+	<div id="addBook" class="header">
+		<label>Title</label>
+		<br>
+		<input type="text" id="myTitre" ">
+		<br><br>
+		<label>Author</label>
+		<br>
+		<input type="text" id="myAuteur">
+		<br><br>
+		<label>ISBN</label>
+		<br>
+		<input type="text" id="myISBN">
+		<br><br>
+		<button onclick="addBook()" class="addBtn">Submit</button>
+	</div>
+	<br><br>
+	<div class="header">
+		<table id="showBooks" >
+			<tr>
+				<th> Titre </th>
+				<th> Auteur </th>
+				<th> ISBN </th>
+				<th></th>
+			</tr>
+		</table>
+	</div>
+
+	<script src="Jscript_livre.js"></script>
+
+</body>
+</html>
