@@ -1,0 +1,139 @@
+body{
+width: 60%;
+margin: auto;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: auto;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+label{
+	font-family: cursive;
+}
+
+.addBtn {
+	width: 100%;
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:cursive;
+	font-size:20px;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	height: 40px;
+}
+.addBtn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.addBtn:active {
+	position:relative;
+	top:1px;
+}
+
+h1{
+font-family: cursive;
+}
+
+table{
+	font-family: cursive;
+	width: 100%;
+	text-align: left;
+}
+
+.close{
+	font-size: 20px!important; 
+    color:green;
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover{
+    color:red;
+}
+
+div.green{
+	width: 100%;
+	-moz-box-shadow: 0px 0px 0px 2px #71b552;
+	-webkit-box-shadow: 0px 0px 0px 2px #71b552;
+	box-shadow: 0px 0px 0px 2px #71b552;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #7dd154));
+	background:-moz-linear-gradient(top, #77b55a 5%, #7dd154 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #7dd154 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #7dd154 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #7dd154 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #7dd154 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#7dd154',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #64b03d;
+	color:black;
+	font-family:cursive;
+	font-size:20px;
+	padding:0px 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+	height: 40px;
+}
+
+div.red{
+	width: 100%;
+	-moz-box-shadow: 0px 0px 0px 2px #eb4209;
+	-webkit-box-shadow: 0px 0px 0px 2px #eb4209;
+	box-shadow: 0px 0px 0px 2px #eb4209;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fc4512), color-stop(1, #f5310a));
+	background:-moz-linear-gradient(top, #fc4512 5%, #f5310a 100%);
+	background:-webkit-linear-gradient(top, #fc4512 5%, #f5310a 100%);
+	background:-o-linear-gradient(top, #fc4512 5%, #f5310a 100%);
+	background:-ms-linear-gradient(top, #fc4512 5%, #f5310a 100%);
+	background:linear-gradient(to bottom, #fc4512 5%, #f5310a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc4512', endColorstr='#f5310a',GradientType=0);
+	background-color:#fc4512;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #f23009;
+	text-shadow:0px 1px 0px #f0520e;
+	color:black;
+	font-family:cursive;
+	font-size:20px;
+	padding:0px 5px;
+	text-decoration:none;
+	height: 40px;
+}

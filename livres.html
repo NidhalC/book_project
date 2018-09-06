@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="livre.css">
+	<h1>Add Book</h1>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div id="message" style='display:none;'>
+		<span id="popUp">text</span>
+	</div>
+	<div id="addBook" class="header">
+		<label>Title</label>
+		<br>
+		<input type="text" id="myTitre">
+		<br><br>
+		<label>Author</label>
+		<br>
+		<input type="text" id="myAuteur">
+		<br><br>
+		<label>ISBN</label>
+		<br>
+		<input type="text" id="myISBN" ">
+		<br><br>
+		<button onclick="addBook()" class="addBtn">Submit</button>
+	</div>
+	<br><br>
+	<div class="header">
+		<table id="showBooks" >
+			<tr>
+				<th> Titre </th>
+				<th> Auteur </th>
+				<th> ISBN </th>
+				<th></th>
+			</tr>
+		</table>
+	</div>
+
+	<script src="livres.js"></script>
+
+</body>
+</html>
