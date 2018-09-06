@@ -39,7 +39,10 @@ function insertRow(book) {
 	var i;
 	for (i = 0; i < close.length; i++) {
 		close[i].onclick = function() {
-			document.getElementById("showBooks").deleteRow(this.parentNode.parentNode.rowIndex);
+			let a = this.parentNode.parentNode.rowIndex;
+			localStorage.removeItem(document.getElementById('showBooks').getElementsByTagName('tr')[a].cells[2].innerText);
+			console.log(document.getElementById('showBooks').getElementsByTagName('tr')[a].cells[2].innerText);
+			document.getElementById("showBooks").deleteRow(a);
 			var d=document.getElementById("message");
 			var sp = document.getElementById("popUp");
 			sp.innerText='Livre supprimé';
@@ -63,16 +66,9 @@ function addBook() {
 			alert('Numéro ISBN non valide');
 		}else{
 			var obj = new Book(inputTitre,inputAuteur,inputISBN);
-			var ls = localStorage.getItem('saveobj');
 			insertRow(obj);
-			if (ls == ''){
-				localStorage.setItem('saveobj', JSON.stringify([obj]));
-			}else{
-				console.log(ls);
-				var books = JSON.parse(ls);
-				books.push(obj);
-				localStorage.setItem('saveobj', JSON.stringify(books));
-			}
+
+			localStorage.setItem(inputISBN, JSON.stringify(obj));
 			var d=document.getElementById("message");
 			var sp = document.getElementById("popUp");
 			sp.innerText='Livre ajouté';
@@ -85,23 +81,19 @@ function addBook() {
 	}
 }
 
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-	close[i].onclick = function() {
-		console.log('appel methode');
-		document.getElementById("showBooks").deleteRow(i);
-	}
-}
 
 recuperer();
 verif();
 
 function verif(){
-	if(localStorage.getItem('saveobj')!=''){
-		var books = JSON.parse(localStorage.getItem('saveobj'));
-		for(i=0; i<books.length;i++){
-			insertRow(books[i]);
+	if(localStorage.length!=0){
+		for(i=0; i<localStorage.length;i++){
+			let cle = localStorage.key(i);
+			console.log(cle);
+			console.log(typeof(cle));
+			console.log(localStorage.getItem(cle));
+			console.log(JSON.parse(localStorage.getItem(cle)).auteur);
+			insertRow(JSON.parse(localStorage.getItem(cle)));
 		}
 	}
 }
