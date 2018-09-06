@@ -95,14 +95,15 @@ for (i = 0; i < close.length; i++) {
 }
 
 recuperer();
-localStorage.setItem('saveobj', '');
+verif();
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-	close[i].onclick = function() {
-		var div = this.parentElement;
-		div.style.display = "none";
+function verif(){
+	if(localStorage.getItem('saveobj')!=''){
+		var books = JSON.parse(localStorage.getItem('saveobj'));
+		for(i=0; i<books.length;i++){
+			insertRow(books[i]);
+		}
 	}
 }
+
+
